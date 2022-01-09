@@ -10,6 +10,7 @@ button {
   transform: translate(-50%, -50%);
   background: white;
   padding: 20px;
+  max-width: 73%;
 }
 .modal .close {
   float: right;
@@ -53,9 +54,13 @@ button {
 .background .table {
   border-radius: 50%;
   width: 25vw;
+  max-width: 300px;
+  min-width: 250px;
   height: 25vw;
+  max-height: 300px;
+  min-height: 250px;
   background-color: #c1c1f3;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(391deg) skew(132deg, -4deg);
@@ -73,10 +78,14 @@ button {
   height: 140px;
   background: #c1ddb1;
   margin: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 .hand {
   display: flex;
+  text-align: center;
 }
 
 /*

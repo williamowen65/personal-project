@@ -13,7 +13,8 @@ export function assignAngles(myCardCount) {
 
     for(let i = 0; i < myCardCount; i++){
         const styles = {
-            transform: `rotate(${start}deg)`
+            transform: `rotate(${start}deg) translate(-50%,-50%)`,
+            
         }
         
         start += factor
