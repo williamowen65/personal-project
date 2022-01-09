@@ -1,0 +1,63 @@
+button {
+  color: blue;
+}
+
+.modal {
+  border: 1px solid black;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+}
+.modal .close {
+  float: right;
+  transform: translate(12px, -14px);
+  cursor: pointer;
+  padding: 0 0 20px 20px;
+}
+.modal .link {
+  white-space: nowrap;
+  max-width: 300px;
+  overflow-x: scroll;
+  margin-right: 10px;
+  line-height: 25px;
+  padding: 0 10px;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.modal .link::-webkit-scrollbar {
+  height: 2px;
+}
+.modal .link::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.modal .link::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.modal .link::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.modal .copy {
+  background: rgba(197, 119, 132, 0.151);
+  padding: 10px;
+  display: flex;
+}
+.modal .copy button {
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  background: chocolate;
+}
+
+/*# sourceMappingURL=App.css.map */

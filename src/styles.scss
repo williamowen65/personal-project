@@ -1,0 +1,13 @@
+@import './pages/welcome/welcome.scss';
+@import './components/modal/modal.scss';
+@import './components/game/background/background.scss';
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    background: chocolate;
+}
