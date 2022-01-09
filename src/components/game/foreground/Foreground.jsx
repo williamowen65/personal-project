@@ -6,7 +6,7 @@ import Card from '../card/Card';
 
 export default function Foreground() {
 
-    const [cardData, setCardData] = useState(6)
+    const [cardData, setCardData] = useState(8)
     const [cards, setCards] = useState([])
 
     useEffect(() => {

@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function Card({styles}) {
-    console.log(styles);
+export default function Card({styles, classes}) {
+    // console.log(styles);
+    console.log(classes);
     return (
-        <div className='card' style={styles}>
+        <div className={`card ${classes}`} style={styles}>
             card
         </div>
     )

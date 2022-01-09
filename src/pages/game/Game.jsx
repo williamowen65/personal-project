@@ -5,7 +5,12 @@ import Background from '../../components/game/background/Background';
 
 export default function Game() {
 
-    
+    const [gameData, setGameData] = useState({
+        background: {
+            totalOtherPlayers: 2,
+            otherPlayersTotalHand: [3, 6]
+        }
+    })
 
     useEffect(() => {
       
@@ -18,7 +23,7 @@ export default function Game() {
 
 
             <div>
-                <Background />
+                <Background background={gameData.background}/>
                 <Foreground />
             </div>
         </>

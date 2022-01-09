@@ -1,13 +1,22 @@
 .card {
-    $width: 100px;
-    width: $width;
-    height: $width * 1.4;
+   
     background: rgb(193, 221, 177);
     margin: 10px;
     position: absolute;
+    transform-origin: bottom left;
     top:50%;
     left:50%;
-
+    border: 1px solid black;
+    &.myHand{
+        $width: 150px;
+        width: $width;
+        height: $width * 1.4;
+    }
+    &.opponent{
+        $width: 50px;
+        width: $width;
+        height: $width * 1.4;
+    }
 }
 
 /// The angle of a card is determined via javascript
