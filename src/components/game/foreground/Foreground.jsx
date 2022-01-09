@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react/cjs/react.development';
+import { assignAngles } from '../card/cardLogic';
 
 import Card from '../card/Card';
 
@@ -9,16 +10,13 @@ export default function Foreground() {
     const [cards, setCards] = useState([])
 
     useEffect(() => {
-        console.log('cards: ', cards, cardData);
-        const myCards = []
-        for(let i = 0; i < cardData; i++){
-            myCards.push(<Card key={i}/>)
-        }
-        setCards(myCards)
+        
+        const myCards = assignAngles(cardData)
         console.log(myCards);
-
+        setCards(myCards)
     }, [cardData])
     // console.log(cards);
+    
 
     return (
         <div className='foreground hand'>

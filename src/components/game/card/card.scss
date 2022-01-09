@@ -2,12 +2,15 @@
     $width: 100px;
     width: $width;
     height: $width * 1.4;
-    background: blue;
+    background: rgb(193, 221, 177);
     margin: 10px;
 }
 
+/// The angle of a card is determined via javascript
+
 .hand{
     display: flex;
+    
 }
 
 /*
