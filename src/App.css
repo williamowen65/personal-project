@@ -50,6 +50,40 @@ button {
   cursor: pointer;
 }
 
+.background .table {
+  border-radius: 50%;
+  width: 25vw;
+  height: 25vw;
+  background-color: #c1c1f3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(391deg) skew(132deg, -4deg);
+}
+
+.foreground {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  width: 100px;
+  height: 140px;
+  background: blue;
+  margin: 10px;
+}
+
+.hand {
+  display: flex;
+}
+
+/*
+dims
+2.5 x 3.5
+30 X 42 42/30= 
+*/
 body {
   display: flex;
   justify-content: center;

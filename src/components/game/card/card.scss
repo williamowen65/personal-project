@@ -1,0 +1,17 @@
+.card {
+    $width: 100px;
+    width: $width;
+    height: $width * 1.4;
+    background: blue;
+    margin: 10px;
+}
+
+.hand{
+    display: flex;
+}
+
+/*
+dims
+2.5 x 3.5
+30 X 42 42/30= 
+*/

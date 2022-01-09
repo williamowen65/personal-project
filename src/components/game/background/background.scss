@@ -1,0 +1,14 @@
+.background {
+    .table {
+        $tableSize: 25vw;
+        border-radius: 50%;
+        width: $tableSize;
+        height: $tableSize;
+        background-color: rgb(193, 193, 243);
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform:  translate(-50%, -50%) rotate(391deg) skew(132deg, -4deg)
+
+    }
+}
