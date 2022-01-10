@@ -8,7 +8,7 @@ export default function Game() {
     const [gameData, setGameData] = useState({
         background: {
             totalOtherPlayers: 2,
-            otherPlayersTotalHand: [3, 6]
+            otherPlayersTotalHand: [4, 6]
         }
     })
 

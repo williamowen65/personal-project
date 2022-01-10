@@ -16,6 +16,9 @@
         $width: 50px;
         width: $width;
         height: $width * 1.4;
+        background-image: url('/public/imgs/cardback.jpg');
+        background-size: $width + 5px;
+        background-position: -2.5px, -5px;
     }
 }
 
