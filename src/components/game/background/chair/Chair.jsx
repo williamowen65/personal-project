@@ -13,7 +13,6 @@ export default function Chair({styles, children, cardCount}) {
 
     return (
         <div className='chair' style={styles}>
-            chair
             {cards}
             {children}
         </div>
