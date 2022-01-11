@@ -29,6 +29,7 @@
         $width: 25px;
         width: $width;
         height: $width * 1.4;
+        position: relative;
     }
     &.deck {
         $width: 25px;

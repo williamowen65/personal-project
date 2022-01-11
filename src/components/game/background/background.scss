@@ -28,6 +28,12 @@
             height: $square;
             grid-template-columns: repeat(20, minmax(9px, 1fr));
             grid-template-rows: repeat(20, minmax(9px, 1fr));
+            p{
+                margin: 0;
+            }
+            &.card.tableCard{
+                grid-row: 4;
+            }
         }
     }
     .chair {

@@ -23,12 +23,12 @@ const spriteCoordinates = {
 }
 
 export function assignAngles(myCardCount, opponent, myCardData) {
-    console.log(myCardData);
+    // console.log(myCardData);
     const bounds = [-45, 45]
     const difference = (bounds[0] * -1) + bounds[1]
     const factor = difference /myCardCount
     let start = bounds[0]
-    console.log(myCardCount);
+    // console.log(myCardCount);
     const myCards = []
 
     for(let i = 0; i < myCardCount; i++){
@@ -50,12 +50,29 @@ export function assignAngles(myCardCount, opponent, myCardData) {
 }
 
 
-export function assignDeckCards(cardData, options) {
+export function composeDecks(deckData, options) {
     const possibleOptions = {
         mulitpleDecks: true,
         splitDeck: true,
     }
+    console.log(deckData);
 
+    const decks = deckData.map(deck => {
+
+        const styles = { 
+            gridRow: deck.coordinates[0],
+            gridColumn: deck.coordinates[1],
+            transform: 'rotate(-51deg)'
+        }
+
+        /// run another map and return is based on number of cards in deck
+        
+        return <Card styles={styles} classes={'tableCard'} key={deck.id}/>
+    })
+
+    return decks
+    // console.log(cardData);
+    // return <Card />
     //cardData => number
     //Use css to give a stacking effect.
     

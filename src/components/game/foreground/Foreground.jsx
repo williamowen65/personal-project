@@ -12,9 +12,9 @@ export default function Foreground({foreground}) {
     useEffect(() => {
         const length = foreground.myCards.length
         
-        console.log(length);
+        // console.log(length);
         const myCards = assignAngles(length, null, foreground.myCards)
-        console.log(myCards);
+        // console.log(myCards);
         setCards(myCards)
     }, [cardData])
     // console.log(cards);

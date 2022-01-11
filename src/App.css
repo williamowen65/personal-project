@@ -79,6 +79,12 @@ button {
   grid-template-columns: repeat(20, minmax(9px, 1fr));
   grid-template-rows: repeat(20, minmax(9px, 1fr));
 }
+.background .table .cardPlotter p {
+  margin: 0;
+}
+.background .table .cardPlotter.card.tableCard {
+  grid-row: 4;
+}
 .background .chair {
   width: 200px;
   height: 300px;
@@ -118,6 +124,7 @@ button {
 .card.tableCard {
   width: 25px;
   height: 35px;
+  position: relative;
 }
 .card.deck {
   width: 25px;

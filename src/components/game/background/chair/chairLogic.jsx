@@ -2,7 +2,7 @@ import React from 'react'
 import Chair from './Chair'
 
 export function assignChairs(backgroundData) {
-  console.log('this is my data: ', backgroundData);
+//   console.log('this is my data: ', backgroundData);
     const myChairs = [];
 
     const styles = {
@@ -38,7 +38,7 @@ export function assignChairs(backgroundData) {
 
     const cardCount = backgroundData.otherPlayersTotalHand
 
-    console.log('ourstyle: ', ourStyles, styles, styles['2OtherPlayers'], backgroundData.totalOtherPlayers);
+    // console.log('ourstyle: ', ourStyles, styles, styles['2OtherPlayers'], backgroundData.totalOtherPlayers);
 
     for(let i = 0; i < backgroundData.totalOtherPlayers; i++){
         myChairs.push(<Chair key={i} styles={ourStyles[i]} cardCount={cardCount[i]}/>)

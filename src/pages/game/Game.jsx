@@ -20,6 +20,15 @@ export default function Game() {
                 ['3','diamonds'],
                 ['5', 'hearts']
             ]
+        },
+        tableData: {
+            decks: [
+                {
+                    id: 1,
+                    numCards: 30,
+                    coordinates: [7,9]
+                }
+            ]
         }
     })
 
@@ -34,7 +43,7 @@ export default function Game() {
 
 
             <div>
-                <Background background={gameData.background}/>
+                <Background background={gameData.background} tableData={gameData.tableData}/>
                 <Foreground foreground={gameData.foreground}/>
             </div>
         </>
