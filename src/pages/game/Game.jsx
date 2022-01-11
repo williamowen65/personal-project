@@ -9,6 +9,15 @@ export default function Game() {
         background: {
             totalOtherPlayers: 2,
             otherPlayersTotalHand: [4, 6]
+        },
+        foreground: {
+            myCards: [
+                ['A', 'hearts'], 
+                ['queen', 'spades'], 
+                ['jack', 'hearts'], 
+                ['3','diamonds'],
+                ['5','spades']
+            ]
         }
     })
 
@@ -24,7 +33,7 @@ export default function Game() {
 
             <div>
                 <Background background={gameData.background}/>
-                <Foreground />
+                <Foreground foreground={gameData.foreground}/>
             </div>
         </>
     )

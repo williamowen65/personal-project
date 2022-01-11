@@ -11,6 +11,8 @@
         $width: 150px;
         width: $width;
         height: $width * 1.4;
+        background-image: url('/public/imgs/cardsSprite.png');
+        background-size: 2126px;
     }
     &.opponent{
         $width: 50px;

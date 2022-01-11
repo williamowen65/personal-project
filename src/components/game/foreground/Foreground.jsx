@@ -4,14 +4,16 @@ import { assignAngles } from '../card/cardLogic';
 
 import Card from '../card/Card';
 
-export default function Foreground() {
+export default function Foreground({foreground}) {
 
     const [cardData, setCardData] = useState(8)
     const [cards, setCards] = useState([])
 
     useEffect(() => {
+        const length = foreground.myCards.length
         
-        const myCards = assignAngles(cardData)
+        console.log(length);
+        const myCards = assignAngles(length, null, foreground.myCards)
         console.log(myCards);
         setCards(myCards)
     }, [cardData])
