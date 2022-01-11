@@ -72,6 +72,13 @@ button {
   justify-content: center;
   align-items: center;
 }
+.background .table .cardPlotter {
+  display: grid;
+  width: 73%;
+  height: 73%;
+  grid-template-columns: repeat(20, minmax(9px, 1fr));
+  grid-template-rows: repeat(20, minmax(9px, 1fr));
+}
 .background .chair {
   width: 200px;
   height: 300px;

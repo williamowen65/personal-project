@@ -21,7 +21,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
+        .cardPlotter{
+            display: grid;
+            $square: 73%;
+            width: $square;
+            height: $square;
+            grid-template-columns: repeat(20, minmax(9px, 1fr));
+            grid-template-rows: repeat(20, minmax(9px, 1fr));
+        }
     }
     .chair {
         width: 200px;

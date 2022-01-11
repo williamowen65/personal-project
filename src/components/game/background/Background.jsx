@@ -27,7 +27,19 @@ export default function Background({background}) {
         <div className='background'>
             {chairs}
             <div className="table">
-                <Card classes={'tableCard'}/>
+                <div className="cardPlotter">
+                    <p>card</p>
+                    <p>card</p>
+                    <p>card</p>
+                    <p>card</p>
+                    <p>card</p>
+                    <p>card</p>
+                    <p>card</p>
+                    <p>card</p>
+                    <p>card</p>
+                    <p>card</p>
+                    <Card classes={'tableCard'}/>
+                </div>
             </div>
         </div>
     )
