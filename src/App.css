@@ -68,6 +68,9 @@ button {
   left: 50%;
   border: 1px solid black;
   transform: translate(-50%, -50%) rotate(391deg) skew(132deg, -4deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .background .chair {
   width: 200px;
@@ -104,6 +107,14 @@ button {
   background-image: url("/public/imgs/cardback.jpg");
   background-size: 55px;
   background-position: -2.5px, -5px;
+}
+.card.tableCard {
+  width: 25px;
+  height: 35px;
+}
+.card.deck {
+  width: 25px;
+  height: 35px;
 }
 
 .hand {

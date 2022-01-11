@@ -14,9 +14,11 @@ export default function Game() {
             myCards: [
                 ['A', 'hearts'], 
                 ['queen', 'spades'], 
+                ['5','spades'],
                 ['jack', 'hearts'], 
+                ['7','clubs'],
                 ['3','diamonds'],
-                ['5','spades']
+                ['5', 'hearts']
             ]
         }
     })

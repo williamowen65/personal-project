@@ -7,6 +7,9 @@
     top:50%;
     left:50%;
     border: 1px solid black;
+    @mixin cardShape {
+        
+    }
     &.myHand{
         $width: 150px;
         width: $width;
@@ -21,6 +24,16 @@
         background-image: url('/public/imgs/cardback.jpg');
         background-size: $width + 5px;
         background-position: -2.5px, -5px;
+    }
+    &.tableCard{
+        $width: 25px;
+        width: $width;
+        height: $width * 1.4;
+    }
+    &.deck {
+        $width: 25px;
+        width: $width;
+        height: $width * 1.4;
     }
 }
 

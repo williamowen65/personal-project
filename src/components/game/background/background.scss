@@ -17,7 +17,11 @@
         top: 50%;
         left:50%;
         border: 1px solid black;
-        transform:  translate(-50%, -50%) rotate(391deg) skew(132deg, -4deg)
+        transform:  translate(-50%, -50%) rotate(391deg) skew(132deg, -4deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
     }
     .chair {
         width: 200px;

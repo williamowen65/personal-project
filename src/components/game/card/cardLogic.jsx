@@ -48,3 +48,15 @@ export function assignAngles(myCardCount, opponent, myCardData) {
 
     return myCards
 }
+
+
+export function assignDeckCards(cardData, options) {
+    const possibleOptions = {
+        mulitpleDecks: true,
+        splitDeck: true,
+    }
+
+    //cardData => number
+    //Use css to give a stacking effect.
+    
+}
