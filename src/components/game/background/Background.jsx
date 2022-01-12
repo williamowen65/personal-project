@@ -17,7 +17,7 @@ export default function Background({background, tableData}) {
         setChairs(myChairs)
 
         const theDecks = composeDecks(tableData.decks)
-        console.log(theDecks);
+        // console.log(theDecks);
         setDecks(theDecks)
 
 

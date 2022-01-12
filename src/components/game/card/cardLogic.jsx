@@ -55,19 +55,46 @@ export function composeDecks(deckData, options) {
         mulitpleDecks: true,
         splitDeck: true,
     }
-    console.log(deckData);
+    // console.log(deckData);
 
     const decks = deckData.map(deck => {
+        const {
+            coordinates,
+            numCards,
+            id
+        } = deck
 
         const styles = { 
-            gridRow: deck.coordinates[0],
-            gridColumn: deck.coordinates[1],
-            transform: 'rotate(-51deg)'
+            gridRow: coordinates[0],
+            gridColumn: coordinates[1],
+            transform: undefined
         }
 
-        /// run another map and return is based on number of cards in deck
+        let valuesX = [0]
+        let valuesY = [0]
+
+        for(let i = 0; i < 52; i++){
+            valuesX.push(valuesX[valuesX.length - 1] - 4)
+            valuesY.push(valuesY[valuesY.length - 1] - 2)
+        }
         
-        return <Card styles={styles} classes={'tableCard'} key={deck.id}/>
+        // console.log(test);
+        const thisDeck = []
+        /// run another map and return is based on number of cards in deck
+        for (let i = 0; i < numCards; i++){
+            const x = valuesX[i]
+            const y = valuesY[i]
+            console.log(x,y);
+            const myStyles = {...styles}
+            myStyles.transform = `translate(${x}px, ${y}px) rotate(-51deg)`
+         
+            console.log(thisDeck);
+            thisDeck.push(<Card styles={myStyles} classes={'tableCard'} key={i}/>)
+        }
+        console.log(thisDeck);
+
+
+        return thisDeck
     })
 
     return decks
